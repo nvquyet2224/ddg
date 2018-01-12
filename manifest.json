@@ -33,7 +33,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html?launcher=true",
+  "start_url": "https://nvquyet2224.github.io",
   "theme_color": "#0e170f",
   "background_color" :"#ffffff",
   "display": "standalone",
