@@ -48,10 +48,21 @@
 <link rel="alternate" href="" hreflang="vi-vn">
 <link rel="alternate" href="" hreflang="en-gb">
 
-<link href="http://digital-marketing.com.vn/ddg_speed" rel="canonical">
-<style type="text/css">
+<link href="https://nvquyet2224.github.io/ddg/" rel="canonical">
 
-</style>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}    
+</script>    
 </head>
 
 <body id="home-page">
