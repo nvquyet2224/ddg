@@ -51,17 +51,11 @@
 <link href="https://nvquyet2224.github.io/ddg/" rel="canonical">
 
 <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}    
+  
+// If service workers are supported, and one isn't already registered
+if ('serviceWorker' in navigator && !navigator.serviceWorker.controller) {
+  navigator.serviceWorker.register('/sw.js');
+}
 </script>    
 </head>
 
