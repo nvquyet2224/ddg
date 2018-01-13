@@ -1,4 +1,4 @@
-var PRECACHE = 'precache-v1';
+var PRECACHE = 'AirHorner';
 var RUNTIME = 'runtime';
 
 // list the files you want cached by the service worker
