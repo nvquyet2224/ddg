@@ -37,8 +37,5 @@
   "theme_color": "#0e170f",
   "background_color" :"#ffffff",
   "display": "standalone",
-  "related_applications": [{
-     "platform": "web"
-  }],
   "orientation": "landscape"
 }
