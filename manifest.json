@@ -33,9 +33,12 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://nvquyet2224.github.io/ddg",
+  "start_url": ".",
   "theme_color": "#0e170f",
   "background_color" :"#ffffff",
   "display": "standalone",
+  "related_applications": [{
+     "platform": "web"
+  }],
   "orientation": "landscape"
 }
