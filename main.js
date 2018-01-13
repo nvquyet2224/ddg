@@ -19,7 +19,7 @@ $(document).ready(function () {
     },200);
 
     setTimeout(function(){
-        loadData4('data-04.html',$('#box4'));
+        loadData('data-04.html',$('#box4'));
     },300);
     
 });
