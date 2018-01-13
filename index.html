@@ -1,7 +1,22 @@
 <!DOCTYPE HTML>
 <html lang="vi">
 <head>
-    
+<meta name="theme-color" content="#0e170f">
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Demo">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name = "format-detection" content = "telephone=no">
+<title>Demo</title>
+<meta name="description" content="Demo">
+<meta name="keywords" content="Demo">
+
+<link rel="manifest" href="manifest.json">    
+<link rel="icon" href="images/favicon.png">
+<link rel="canonical" href="https://nvquyet2224.github.io/ddg">
+
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -14,81 +29,30 @@ if ('serviceWorker' in navigator) {
     });
   });
 }    
-
-</script>    
-<meta name="theme-color" content="#0e170f">
-<meta charset="utf-8">
-<meta name="google" content="notranslate">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Indochine imex., JSC">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name = "format-detection" content = "telephone=no">
-<title>Indochine imex., JSC</title>
-<meta name="description" content="Indochine imex., JSC">
-<meta name="keywords" content="Indochine imex., JSC">
-<meta property="og:url" content="home.html">
-<meta property="og:title" content="Indochine imex., JSC">
-<meta property="og:description" content="Indochine imex., JSC">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/social-share.png">
-<meta property="og:locale" content="vi_VN">
-
-<!-- android -->
-<meta name="mobile-web-app-capable" content="yes">
-<!-- iOS -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Indochine imex., JSC">
-<!-- Facebook -->
-<meta property="og:title" content="Indochine imex., JSC">
-<meta property="og:site_name" content="Indochine imex., JSC" >
-<meta property="og:description" content="Indochine imex., JSC" >
-<meta property="og:url" content="home.html">
-<meta property="og:image" content="images/social-share.png" >
-<meta property="og:type" content="website">
-<!-- Google Plus -->
-<meta itemprop="name" content="Indochine imex., JSC">
-<meta itemprop="description" content="Indochine imex., JSC">
-<meta itemprop="image" content="images/social-share.png">
+</script>
     
-<link rel="manifest" href="manifest.json">
-    
-<link rel="icon" href="images/favicon.png">
-<link rel="alternate" href="" hreflang="vi-vn">
-<link rel="alternate" href="" hreflang="en-gb">
-
-<link href="https://nvquyet2224.github.io/ddg/" rel="canonical">
-
 </head>
 
 <body id="home-page">
-<!--LOAD-PAGE-->
-<div class="all-pics"></div>
-<div class="all-album"></div>
-<div class="allvideo"></div>
-<div class="overlay-album"></div>
-<div class="overlay-video"></div>
-<div class="overlay-dark"></div>
-<!--LOAD-PAGE-->
-
 <!--HEADER-->
-<header>
+<header class="header">
 
 <div class="top"><span></span></div>
 
 <!--logo-->
 <div class="logo">
-<div class="logo-company"></div>
+<a href="javascript:void(0);">logo</a>
 </div>
 <!--logo-->
 
 <!--SEARCH-->
-<a href="javascript:void(0);" class="search"><span></span>search</a>
+<div class="search">
+<a href="javascript:void(0);">search</a>
+</div>
 <div class="search-form">
 <div class="form-row-search">
 <form action="#" id="search">
-<label for="aaa">tìm</label><input id="aaa" type="text" value="Tìm kiếm...">
+<label for="input_search">tìm</label><input id="input_search" type="text" value="Tìm kiếm...">
 </form>
 </div>
 </div>
@@ -99,9 +63,9 @@ if ('serviceWorker' in navigator) {
 <a href="javascript:void(0);">EN</a>
 </div>
 <!--language-->
+    
 <!--menu-->
 <nav>
-<div class="navigation">
 <div class="nav">
 <ul>
 <li data-page="home-page"><a class="link-home" href="home.html">Trang chủ</a></li>
@@ -111,10 +75,8 @@ if ('serviceWorker' in navigator) {
 <li data-page="shareholder-page"><a href="shareholder.html">Quan hệ Cổ đông</a></li>
 <li data-page="sustainable-page"><a href="sustainable.html">Phát triển bền vững</a></li>
 <li data-page="culture-page"><a href="culture.html">Văn hoá doanh nghiệp</a></li>
-<li data-page="news-page"><a href="news.html">Tin tức & Sự kiện</a></li>
 <li data-page="contact-page"><a href="contact.html">Liên hệ</a></li>
 </ul>
-</div>
 </div>
 </nav>
 <!--menu-->
@@ -127,81 +89,189 @@ if ('serviceWorker' in navigator) {
 
 <!--CONTAINER-->
 <div class="container">
-
-<!--SLIDER-->
-<section class="slider-home" data-time="5000">
-<div class="slide-bg">
-<div class="slogan">
-<h1>Công nghệ <strong>vượt trội</strong></h1>
-<h2>lợi ích <strong>sẻ chia</strong></h2>
+<main>
+<aside>
+<ul>
+<li><a href="about.html">Giới thiệu</a></li>
+<li><a href="business.html">Lĩnh vực hoạt động</a></li>
+<li><a href="projects.html">Công trình tiêu biểu</a></li>
+<li><a href="shareholder.html">Quan hệ Cổ đông</a></li>
+<li><a href="sustainable.html">Phát triển bền vững</a></li>
+<li><a href="culture.html">Văn hoá doanh nghiệp</a></li>
+<li><a href="contact.html">Liên hệ</a></li>
+</ul>
+</aside>
+<article>
+<section>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
 </div>
-<div class="pagination"></div>
-<div class="item-wrapper">
-
-<div class="item-container">
-<div class="bg-home" style="background-image:url(bg1.jpg)">
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
 </div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
 </div>
-
-<div class="item-container">
-<div class="bg-home" style="background-image:url(bg2.jpg)">
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
 </div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
 </div>
-
-<div class="item-container">
-<div class="bg-home" style="background-image:url(bg3.jpg)">
-</div>
-</div>
-
-</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
 </div>
 </section>
-<!--SLIDER--> 
-
-
-<!--TOOLS-->
-<section class="tool-content ani-text">
-<div class="tool-box"><a class="save-but" href="javascript:void(0)">Lưu trang</a><a class="print-but" href="javascript:void(0)">In trang</a></div>
+<section>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
 </section>
-<!--TOOLS-->
-
+<section>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+</section>
+<section>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+</section>
+</article>
+</main>    
 </div>
 <!--CONTAINER-->
 
 <!--FOOTER-->
-<footer>
-<section class="bottom">
-
-<div class="company-info ani-text">
-<h3>Công ty Cổ phần Đầu tư Công nghiệp XNK Đông Dương</h3>
+<footer class="footer">
 <ul>
 <li class="bt-location"><p>308 Cộng Hòa, Phường 13, Quận Tân Bình, Thành phố Hồ Chí Minh, Việt Nam</p></li>
 <li class="bt-phone"><p><a href="tel:+84 (028) 3810 7899">+84 (028) 3810 7899</a> - <a href="tel:+84 (028) 3810 7669">3810 7669</a> - <a href="tel:+84 (028) 3810 7759">3810 7759</a></p></li>
 <li class="bt-fax"><p><a href="tel:+84 (028) 3810 7218">+84 (028) 3810 7218</a> - <a href="tel:+84 (028) 3810 7219">3810 7219</a></p></li>
 <li class="bt-email"><p><a href="info@dongduongcorp.com.vn">info@dongduongcorp.com.vn</a></p></li>
 </ul>
-</div>
-
-<div class="social ani-text">
-<ul>
-<li><a href="javascript:void(0)" class="facebook">facebook</a></li>
-<li><a href="javascript:void(0)" class="linkedin">linkedin</a></li>
-<li><a href="javascript:void(0)" class="googleplus">google</a></li>
-<li><a href="javascript:void(0)" class="youtube">youtube</a></li>
-</ul>
-</div>
-
-<div class="copyright ani-text">
-<p>2017 Copyright © <strong>Indochine imex., JSC</strong>. All rights reserved</p>
-</div>
-
-</section>
 </footer>
 <!--FOOTER-->
 
 <div class="scroll-down"></div>
 <div class="go-top"></div>
-
 
 </body>
 </html>
