@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="vi">
 <head>
+<script src="main.js" async></script>
 <meta name="theme-color" content="#0e170f">
 <meta charset="utf-8">
 <meta name="google" content="notranslate">
@@ -14,7 +15,6 @@
 <title>Demo</title>
 <meta name="description" content="Demo">
 <meta name="keywords" content="Demo">
-
 <link rel="manifest" href="manifest.json">    
 <link rel="icon" href="images/favicon.png">
 <link rel="canonical" href="https://nvquyet2224.github.io">
@@ -66,17 +66,46 @@ input:focus{outline: 0}
 .nav li{display: block;float: left;padding: 0 1.2rem;vertical-align: middle;line-height: 40px;}
 .nav li a{display: block;font-size: 14px;color: #fff}
 </style>
-<script async type="text/javascript" src="main.js"></script>
-    
-<link href="style.css" rel="stylesheet" type="text/css">
-    
-<!--<script type="text/javascript" src="jquery.js"></script>-->
 </head>
 
 <body id="home-page">
-<header class="header"><div class="top"></div></header>
 
+<script>
+var html ='<div class="top">';
+var searchHTML = '<div class="search"><a href="javascript:void(0);">search</a></div><div class="search-form"><input id="input_search" type="text" value="Tìm kiếm..."></div>';
+var logoHTML ='<div class="logo"><a href="javascript:void(0);">logo</a></div>';
+var menuHTML = '<nav class="nav"><ul>';
+menuHTML += '<li><a href="javascript:void(0);">Nhà đất</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Đồ gia dụng</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Đồ điện tử</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Xe</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Thời trang</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Mẹ và bé</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Thú cưng</a></li>';
+menuHTML += '<li><a href="javascript:void(0);">Giải trí</a></li>';
+menuHTML += '</ul></nav>';
+html += searchHTML + logoHTML + menuHTML + "</div>";
+var header = document.createElement('header');
+header.style.position="absolute";
+header.style.left="0";
+header.style.top="0";
+header.style.right="0";
+header.style.height="70";
+header.style.background="#94103e";
+header.innerHTML = html;
+document.body.appendChild(header);
+</script>
 <!--CONTAINER-->
+
+<style>
+.container{padding-top: 70px}
+.section-box{display: block;width: 90%;max-width: 1440px;margin: 0 auto;text-align: center;padding: 3rem 0}
+.box-item{display: inline-block;position: relative;width: 22%;height: auto;margin: .5%;text-align: left;padding: 1rem;background-color: #f2f2f2}
+.box-item h2{font-size:1.5rem}
+.box-item p{font-size:0.875rem;line-height: 1.2rem}
+.footer{position: relative;padding: 4rem 2rem;text-align: center}
+.footer::before{content: "";position:absolute;width: 100%;height:35px;background-image: linear-gradient(90deg,#94103e 0,#db004d);top:0;left:0;right: 0;}
+</style>
 <div class="container">
 <main>
 <section>
