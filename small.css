@@ -1,1 +1,49 @@
-body{background-color:#fff}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;	border:0;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+
+body{background-color:#fff;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;line-height:1;overflow: hidden;overflow-y: auto}
+html{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;}
+*{ -webkit-box-sizing:border-box;-moz-box-sizing:border-box; box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+*, *:before,*:after{  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+ol, ul{list-style:none;}
+blockquote, q{	quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+:focus{outline:0;	border:none}
+a{text-decoration:none;}
+p{text-decoration:none;font-weight:normal;font-size:100%;-webkit-text-size-adjust:none;}
+strong{text-decoration:none;font-weight:bold;}
+cite, em, i{text-decoration:none;font-weight:normal;font-family:Arial, Helvetica, sans-serif;line-height:1;vertical-align:baseline;}
+pre, code{text-decoration:none;}
+ins{text-decoration:none;}
+sup{text-decoration:none;bottom:5px;font-size:70%; vertical-align:baseline;font-weight:normal;position:relative}
+dl dt{text-decoration:none;}
+dd{text-decoration:none;}
+mark{text-decoration:none;font-weight:normal;vertical-align:baseline;}
+del{text-decoration:line-through;}
+.btn:hover{background-position:bottom}
+img[alt]{font-size:0}
+h1, h2, h3, h4, h5, h6{line-height: 1.4}
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{}
+
+input{border:none;background: none;}
+input:focus{outline: 0}
+
+.top{position: relative;display: block;width: 100%;height: 70px;background-color: #94103e}
+
+.logo{position: absolute;left: 2.6%;top:5px; width: 60px;height: 60px;background-color: #fff;-webkit-border-radius: 50%;border-radius: 50%;z-index: 1}
+.logo a{display: block;width: 100%;height: 100%; text-indent: -9999px;overflow: hidden;font-size: 0}
+
+
+.search{position: absolute;right: 2.6%;top:10px;width: 50px;height: 50px;background-color: #fff;-webkit-border-radius: 50%; border-radius: 50%;z-index: 1}
+.search a{display: block;width: 100%;height: 100%; text-indent: -9999px;overflow: hidden;font-size: 0}
+.search-form{position: absolute;right: 6%;top:13px; width: 260px;height: 44px;z-index: 1}
+.search-form input{width: 100%;height: 100%;padding: 0 15px;background-color: #fff;-webkit-border-radius: 30px; border-radius: 30px;}
+
+.nav{position: relative;display: block;width: 100%;height: 100%;line-height: 70px;text-align: center}
+.nav ul{display: inline-block;vertical-align: middle;width: auto;height: auto}
+.nav li{display: block;float: left;padding: 0 1.2rem;vertical-align: middle;line-height: 40px;}
+.nav li a{display: block;font-size: 14px;color: #fff}
+
+
+

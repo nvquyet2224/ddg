@@ -18,255 +18,143 @@
 <link rel="manifest" href="manifest.json">    
 <link rel="icon" href="images/favicon.png">
 <link rel="canonical" href="https://nvquyet2224.github.io">
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;	border:0;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
 
-<!--<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="main.js"></script>-->
+body{background-color:#fff;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;line-height:1;overflow: hidden;overflow-y: auto}
+html{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;}
+*{ -webkit-box-sizing:border-box;-moz-box-sizing:border-box; box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+*, *:before,*:after{  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
 
+ol, ul{list-style:none;}
+blockquote, q{	quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+:focus{outline:0;	border:none}
+a{text-decoration:none;}
+p{text-decoration:none;font-weight:normal;font-size:100%;-webkit-text-size-adjust:none;}
+strong{text-decoration:none;font-weight:bold;}
+cite, em, i{text-decoration:none;font-weight:normal;font-family:Arial, Helvetica, sans-serif;line-height:1;vertical-align:baseline;}
+pre, code{text-decoration:none;}
+ins{text-decoration:none;}
+sup{text-decoration:none;bottom:5px;font-size:70%; vertical-align:baseline;font-weight:normal;position:relative}
+dl dt{text-decoration:none;}
+dd{text-decoration:none;}
+mark{text-decoration:none;font-weight:normal;vertical-align:baseline;}
+del{text-decoration:line-through;}
+.btn:hover{background-position:bottom}
+img[alt]{font-size:0}
+h1, h2, h3, h4, h5, h6{line-height: 1.4}
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{}
+
+input{border:none;background: none;}
+input:focus{outline: 0}
+
+.top{position: relative;display: block;width: 100%;height: 70px;background-color: #94103e }
+
+.logo{position: absolute;left: 2.6%;top:5px; width: 60px;height: 60px;background-color: #fff;-webkit-border-radius: 50%;border-radius: 50%;z-index: 1}
+.logo a{display: block;width: 100%;height: 100%; text-indent: -9999px;overflow: hidden;font-size: 0}
+
+
+.search{position: absolute;right: 2.6%;top:10px;width: 50px;height: 50px;background-color: #fff;-webkit-border-radius: 50%; border-radius: 50%;z-index: 1}
+.search a{display: block;width: 100%;height: 100%; text-indent: -9999px;overflow: hidden;font-size: 0}
+.search-form{position: absolute;right: 6%;top:13px; width: 260px;height: 44px;z-index: 1}
+.search-form input{width: 100%;height: 100%;padding: 0 15px;background-color: #fff;-webkit-border-radius: 30px; border-radius: 30px;}
+
+.nav{position: relative;display: block;width: 100%;height: 100%;line-height: 70px;text-align: center}
+.nav ul{display: inline-block;vertical-align: middle;width: auto;height: auto}
+.nav li{display: block;float: left;padding: 0 1.2rem;vertical-align: middle;line-height: 40px;}
+.nav li a{display: block;font-size: 14px;color: #fff}
+</style>
+<script async type="text/javascript" src="main.js"></script>
+    
+<link href="style.css" rel="stylesheet" type="text/css">
+    
+<!--<script type="text/javascript" src="jquery.js"></script>-->
 </head>
 
 <body id="home-page">
-
-    
-<!--HEADER-->
-<header class="header">
-
-<div class="top"><span></span></div>
-
-<!--logo-->
-<div class="logo">
-<a href="javascript:void(0);">logo</a>
-</div>
-<!--logo-->
-
-<!--SEARCH-->
-<div class="search">
-<a href="javascript:void(0);">search</a>
-</div>
-<div class="search-form">
-<div class="form-row-search">
-<form action="#" id="search">
-<label for="input_search">tìm</label><input id="input_search" type="text" value="Tìm kiếm...">
-</form>
-</div>
-</div>
-<!--SEARCH-->
-
-<!--language-->
-<div class="language">
-<a href="javascript:void(0);">EN</a>
-</div>
-<!--language-->
-    
-<!--menu-->
-<nav>
-<div class="nav">
-<ul>
-<li data-page="home-page"><a class="link-home" href="home.html">Trang chủ</a></li>
-<li data-page="about-page"><a href="about.html">Giới thiệu</a></li>
-<li data-page="business-page"><a href="business.html">Lĩnh vực hoạt động</a></li>
-<li data-page="projects-page"><a href="projects.html">Công trình tiêu biểu</a></li>
-<li data-page="shareholder-page"><a href="shareholder.html">Quan hệ Cổ đông</a></li>
-<li data-page="sustainable-page"><a href="sustainable.html">Phát triển bền vững</a></li>
-<li data-page="culture-page"><a href="culture.html">Văn hoá doanh nghiệp</a></li>
-<li data-page="contact-page"><a href="contact.html">Liên hệ</a></li>
-</ul>
-</div>
-</nav>
-<!--menu-->
-
-<div class="nav-overlay"></div>
-<div class="nav-but"><span></span></div>
-
-</header>
-<!--HEADER-->
-    
-<!--HEADER-->
-<header class="header-ontent">
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>Get started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-<div class="box-item">
-<h2>HEADER started with</h2>
-<p>Get started with AMP and learn how to build your first AMP page.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
-</div>
-</header>
-<!--HEADER-->
+<header class="header"><div class="top"></div></header>
 
 <!--CONTAINER-->
 <div class="container">
 <main>
-<aside>
-<ul>
-<li><a href="about.html">Giới thiệu</a></li>
-<li><a href="business.html">Lĩnh vực hoạt động</a></li>
-<li><a href="projects.html">Công trình tiêu biểu</a></li>
-<li><a href="shareholder.html">Quan hệ Cổ đông</a></li>
-<li><a href="sustainable.html">Phát triển bền vững</a></li>
-<li><a href="culture.html">Văn hoá doanh nghiệp</a></li>
-<li><a href="contact.html">Liên hệ</a></li>
-</ul>
-</aside>
-<article>
-<section id="box1"></section>
-<section id="box2"></section>
-<section id="box3"></section>
-<section id="box4"></section>
-</article>
+<section>
+<div class="section-box">
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+<div class="box-item">
+<h2>Get started with</h2>
+<p>Get started with AMP and learn how to build your first AMP page.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+<p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry, lorem Ipsum is simply dummy text of the printing and  typesetting industry</p>
+</div>
+</div>
+</section>
 </main>    
 </div>
 <!--CONTAINER-->
@@ -281,10 +169,10 @@
 </ul>
 </footer>
 <!--FOOTER-->
-
+    
 <div class="scroll-down"></div>
 <div class="go-top"></div>
-
+    
 <script>
 // Register the service worker
 if ('serviceWorker' in navigator) {
