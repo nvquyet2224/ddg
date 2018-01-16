@@ -5,7 +5,7 @@
 body{padding: 0;margin: 0}
 
 .section-box{text-align: center;width: 100%}
-.box-item{display:inline-block;width:26%;height: auto;margin: .5%;padding: 20px;text-align: left;background-color: #f2f2f2;opacity:0}
+.box-item{display:inline-block;vertical-align: top;width:26%;height: auto;margin: .5%;padding: 20px;text-align: left;background-color: #f2f2f2;opacity:0}
 .box-item img{width: 100%;height: auto}
 .box-item.active{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;}
 
