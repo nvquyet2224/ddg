@@ -1092,7 +1092,7 @@ function codeAddress(map,tempMarker,type) {
        
     
         //Lấy tọa độ người dùng
-        function getCurPosition(){
+        /*function getCurPosition(){
             
             //navigator.geolocation.getCurrentPosition(passLocation, error, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
             
@@ -1124,11 +1124,11 @@ function codeAddress(map,tempMarker,type) {
             navigator.geolocation.getCurrentPosition(passLocation, error, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
         }
     
-        getCurPosition();
+        getCurPosition();*/
     
        
         
-        /*function getLocation() {
+        function getLocation() {
             if (navigator.geolocation) {
                //navigator.geolocation.watchPosition(showPosition);
                 navigator.geolocation.getCurrentPosition(showPosition);
@@ -1138,19 +1138,19 @@ function codeAddress(map,tempMarker,type) {
         }
 
         function showPosition(position) {
-           // x.innerHTML="Latitude: " + position.coords.latitude + 
-            //"<br>Longitude: " + position.coords.longitude;
+           
             var myLocation = {
                 lat:position.coords.latitude,
                 lng:position.coords.longitude
-            }
+            };
+            
             console.log(position.coords.latitude);
-             console.log(position.coords.longitude);
+            console.log(position.coords.longitude);
             
             map.setCenter(myLocation);
         }
     
-        getLocation();*/
+        getLocation();
     
 		//map.setCenter(curLocation);
 		//closest = findClosestN(curLocation,tempMarker);
