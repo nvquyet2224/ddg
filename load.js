@@ -1089,59 +1089,46 @@ function ZoomControlAbout(map,box) {
 //Tìm ATM gần nhất
 function codeAddress(map,tempMarker,type) {
 		
-
+       
+    
         //Lấy tọa độ người dùng
-        /*function getCurPosition(){
-            if (navigator.geolocation) {
+        function getCurPosition(){
+            
+            //navigator.geolocation.getCurrentPosition(passLocation, error, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
+            
+            
+            function passLocation(position) {
+                var lat = position.coords.latitude;
+                var lng = position.coords.longitude;
+                
+                console.log(lat);
+                console.log(lng);
+                
+                var location = {
+                    lat:lat,
+                    lng:lng
+                };
+                
+                map.setCenter(location);
 
-                    var Options = {
-                        //enableHighAccuracy: true,
-                        //timeout: 500,
-                        //maximumAge: 0
-                    };
-
-                    function passLocation(position) {
-                        curLocation.lat = position.coords.latitude;
-                        curLocation.lng = position.coords.longitude;
-                        console.log(curLocation.lat);
-                        console.log(curLocation.lng);
-                        
-                        map.setCenter(curLocation);
-                        //closest = findClosestN(curLocation,tempMarker);
-                        //get driving distance
-                        //calculateDistances(curLocation, closest,type);
-
-                    }
-
-                    function error(){
-                            $.ajax({
-                                    format: "jsonp",
-                                    dataType: "jsonp",
-                                    url: "http://ip-api.com/json",
-                                    success: function (data) {
-                                            //curLocation = new google.maps.LatLng(data.lat, data.lon);
-                                            curLocation.lat = data.lat;
-                                            curLocation.lng = data.lon;
-                                        
-                                            map.setCenter(curLocation);
-                                            closest = findClosestN(curLocation,tempMarker);
-                                            //get driving distance
-                                            calculateDistances(curLocation, closest,type);
-                                        
-                                    },
-                                    error: function () {
-                                            console.log('Can not  get location');
-                                    },
-                                    method: "GET"
-                            });
-                    }
-                    navigator.geolocation.getCurrentPosition(passLocation, error, Options);
+                //closest = findClosestN(curLocation,tempMarker);
+                //get driving distance
+                //calculateDistances(curLocation, closest,type);
 
             }
+
+            function error(){
+                console.log('can not get getCurrentPosition');
+            }
+
+            navigator.geolocation.getCurrentPosition(passLocation, error, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
         }
-        */
+    
+        getCurPosition();
+    
+       
         
-        function getLocation() {
+        /*function getLocation() {
             if (navigator.geolocation) {
                //navigator.geolocation.watchPosition(showPosition);
                 navigator.geolocation.getCurrentPosition(showPosition);
@@ -1163,7 +1150,7 @@ function codeAddress(map,tempMarker,type) {
             map.setCenter(myLocation);
         }
     
-        getLocation();
+        getLocation();*/
     
 		//map.setCenter(curLocation);
 		//closest = findClosestN(curLocation,tempMarker);
