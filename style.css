@@ -1186,8 +1186,8 @@ section{position:relative;float:left;width:100%;height:auto;margin:0;padding:0}
 
 /*zoom control*/
 .zoom-control{position:absolute;bottom:30px;left:20px;display:block;width:40px;height:auto;z-index:20}
-.zoom-control .zoom-full{display:block;width:40px;height:40px;margin-bottom:8px;border:1px solid rgba(255,255,255,0.1);background:#0679c0 url(video/fullscreen.svg) no-repeat center center;box-shadow:0 15px 20px rgba(0,0,0,0.1);-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;-webkit-border-radius:10px;border-radius:10px}
-.zoom-full.active{background:#0679c0 url(video/cancel-fullscreen.svg) no-repeat center center}
+.zoom-control .zoom-full{display:block;width:40px;height:40px;margin-bottom:8px;border:1px solid rgba(255,255,255,0.1);background:#0679c0 url(fullscreen.svg) no-repeat center center;box-shadow:0 15px 20px rgba(0,0,0,0.1);-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;-webkit-border-radius:10px;border-radius:10px}
+.zoom-full.active{background:#0679c0 url(cancel-fullscreen.svg) no-repeat center center}
 .zoom-control .zoom-in{display:block;width:40px;height:40px;margin-bottom:8px;border:1px solid rgba(255,255,255,0.1);background:#074870 url(zoom-in.svg) no-repeat center center / 80% 80%;box-shadow:0 15px 20px rgba(0,0,0,0.1);-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;-webkit-border-radius:10px;border-radius:10px}
 .zoom-control .zoom-out{display:block;width:40px;height:40px;border:1px solid rgba(255,255,255,0.1);background:#0679c0 url(zoom-out.svg) no-repeat center center / 80% 80%;box-shadow:0 15px 20px rgba(0,0,0,0.1);-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;-webkit-border-radius:10px;border-radius:10px}
 .zoom-control .zoom-full:hover{background-color:#074870}
@@ -1324,13 +1324,13 @@ section{position:relative;float:left;width:100%;height:auto;margin:0;padding:0}
 .controls progress {display:block;width:100%;height:100%;margin:0;border:none;overflow:hidden;background-color:rgba(0,0,0,0.1);color:#fff }
 .controls progress span {width:0%;height:100%;display:inline-block;background-color:#fff}
 .controls progress::-moz-progress-bar {	background-color:#fff}
-.controls button[data-state="play"] {background-image:url(video/play.svg);width:20px;height:20px;background-size:cover}
-.controls button[data-state="pause"] {background-image:url(video/pause.svg);width:20px;height:20px;background-size:cover}
-.controls button[data-state="stop"] {background-image:url(video/stop.svg);width:0;height:0;background-size:cover;opacity:0}
-.controls button[data-state="mute"] {background-image:url(video/mute.svg);width:25px;height:25px;background-size:cover}
-.controls button[data-state="unmute"] {background-image:url(video/unmute.svg);width:25px;height:25px;background-size:cover}
-.controls button[data-state="go-fullscreen"] {background-image:url(video/fullscreen.svg);width:20px;height:20px;background-size:cover}
-.controls button[data-state="cancel-fullscreen"] {background-image:url(video/cancel-fullscreen.svg);width:20px;height:20px;background-size:cover}
+.controls button[data-state="play"] {background-image:url(play.svg);width:20px;height:20px;background-size:cover}
+.controls button[data-state="pause"] {background-image:url(pause.svg);width:20px;height:20px;background-size:cover}
+.controls button[data-state="stop"] {background-image:url(stop.svg);width:0;height:0;background-size:cover;opacity:0}
+.controls button[data-state="mute"] {background-image:url(mute.svg);width:25px;height:25px;background-size:cover}
+.controls button[data-state="unmute"] {background-image:url(unmute.svg);width:25px;height:25px;background-size:cover}
+.controls button[data-state="go-fullscreen"] {background-image:url(fullscreen.svg);width:20px;height:20px;background-size:cover}
+.controls button[data-state="cancel-fullscreen"] {background-image:url(cancel-fullscreen.svg);width:20px;height:20px;background-size:cover}
 .video-cover[data-fullscreen=true]{position:fixed;left:0;top:0}
 .video-cover[data-fullscreen=true] video {height:auto}
 .video-cover[data-fullscreen=true] figcaption {display:none}
