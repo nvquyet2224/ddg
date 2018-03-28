@@ -1,0 +1,12 @@
+<svg version="1.1" 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+width="40px" 
+height="80px" 
+viewBox="0 0 40 80">
+<g>
+<polygon opacity="0.1" points="27.834,41.139 9.474,2.278 7.028,3.404 24.857,41.139 7.028,78.875 9.474,80 27.834,41.139 27.833,41.139"/>
+<polygon fill="#FFFFFF" points="26.333,40.403 7.973,1.028 5.527,2.169 23.356,40.404 5.527,78.638 7.973,79.779 26.333,40.404 26.333,40.404"/>
+</g>
+</svg>
