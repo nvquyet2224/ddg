@@ -2084,7 +2084,7 @@ $(document).ready(function () {
 								}*/
                             
 
-								/*if($('.video-content').length){
+								if($('.video-content').length){
 											var curPost = currenttop - $('.video-content').offset().top;
 			
 											if(curPost < 0) { curPost = -curPost;	}
@@ -2097,7 +2097,7 @@ $(document).ready(function () {
 													}
 											}
 														
-								}*/
+								}
 							
 								if($(window).width() > 1100){
 										$(target).css({'-webkit-transform': 'translate3d(0,' + scrollY * 0.3 + 'px, 0)','transform': 'translate3d(0,' + scrollY * 0.3 + 'px, 0)'});

@@ -1,0 +1,19 @@
+/* CSS Document */
+.nav::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.scroll-slide::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.sub-nav::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+
+.support-box::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.best-scroll::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.sub-inner::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+
+
+/*.sub-nav::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.horizon-tab::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.content-table::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+.cart-items-box::-webkit-scrollbar{width:0 !important; height:0 !important; display:none!important}
+
+.video-cover[data-fullscreen=true] video::-webkit-media-controls {display:none !important;}
+.video-cover[data-fullscreen=true] video::-webkit-media-controls-enclosure {display:none !important;}
+.controls progress::-webkit-progress-value {background-color:#fff;}
+*/

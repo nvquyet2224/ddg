@@ -1,21 +1,56 @@
-* {
-  will-change: transform;
-  transform: translateZ(0);
+@charset "utf-8";
+/* CSS Document */
+/* Copyright 2017 by 3graphic.com */
+/*RESET*/
+body{background-color:#fff;width:100%;min-width:315px;position:relative;left:0;top:0;height:100%;margin:0;padding:0;overflow:hidden;overflow-y:auto;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;line-height:1;-webkit-animation:Start 1s steps(1, end) 0s 1 normal both;-moz-animation:Start 1s steps(1, end) 0s 1 normal both;-ms-animation:Start 1s steps(1, end) 0s 1 normal both;animation:Start 1s steps(1, end) 0s 1 normal both}
+
+
+
+/*LOAD*/
+.loadicon{position:fixed;top:50%;left:50%;z-index:110000;width:180px;height:100px;margin:-50px 0 0 -90px;opacity:0}
+.load-present{position:absolute;left:auto;width:100%;height:100%;left:0;top:0}
+.loadicon.loader{opacity:1}
+.line-01{fill:#F48120;fill-opacity:0;}
+.line-02{fill:#0779C0;fill-opacity:0;stroke:#0779C0;stroke-width:3;}
+
+body:not(.no-loading) .loader .line-01{-webkit-animation-name:FillStroke;animation-name:FillStroke;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-delay:2.5s;animation-delay:2.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;}
+body:not(.no-loading) .loader .line-02{stroke-dasharray:600;stroke-dashoffset:600;-webkit-animation-name:DrawStroke, FillStroke;animation-name:DrawStroke, FillStroke;-webkit-animation-duration:3s, 3s;animation-duration:3s, 3s;-webkit-animation-delay:0s, 2s;animation-delay:0s, 2s;-webkit-animation-fill-mode:forwards, forwards;animation-fill-mode:forwards, forwards;}
+
+
+
+
+/*LAYOUT FIRST*/
+.footer, .header{opacity:0}
+.header.fixed{opacity:0;z-index:-1;-webkit-transition:opacity .5s ease-in-out 0s,z-index 0s linear 30ms;transition:opacity .5s ease-in-out 0s,z-index 0s linear 30ms}
+.container{position:relative;display:block;width:100%;height:auto;min-height:100vh;background-color:#fff;overflow:hidden;opacity:0}
+
+
+
+@-webkit-keyframes Start{
+from{visibility:hidden}
+to{visibility:visible}
 }
-body{padding: 0;margin: 0}
-
-.section-box{text-align: center;width: 100%}
-.box-item{display:inline-block;vertical-align: top;width:26%;height: auto;margin: .5%;padding: 20px;text-align: left;background-color: #f2f2f2;opacity:0}
-.box-item img{width: 100%;height: auto}
-.box-item.active{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;}
-
-
-@-webkit-keyframes fadeInUp{
-  0%{opacity:0;-webkit-transform:translate3d(0, 100px, 0);transform:translate3d(0, 100px, 0);}
-  100%{opacity:1;-webkit-transform:none;transform:none;}
+@-moz-keyframes Start{
+from{visibility:hidden}
+to{visibility:visible }
+}
+@-ms-keyframes Start{
+from{visibility:hidden}
+to{visibility:visible }
+}
+@-o-keyframes Start{
+from{visibility:hidden}
+to{visibility:visible}
 }
 
-@keyframes fadeInUp{
-  0%{opacity:0;-webkit-transform:translate3d(0, 100px, 0);transform:translate3d(0, 100px, 0);}
-  100%{opacity:1;-webkit-transform:none;transform:none;}
+@keyframes DrawStroke {
+0% {stroke-dasharray:600;stroke-dashoffset:600;}
+100%{stroke-dasharray:600;stroke-dashoffset:0;}
+}
+
+@-webkit-keyframes FillStroke {
+to{fill-opacity:1}
+}	
+@keyframes FillStroke {
+to{fill-opacity:1;stroke-dashoffset:0}
 }
