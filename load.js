@@ -627,7 +627,7 @@ function initMapHome() {
 				//map.setZoom(6);
 		});
 		
-		var logo = '../pictures/logo-map.png';
+		var logo = 'logo-map.png';
 		
 		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		map.mapTypes.set('map_style', styledMap);
@@ -686,7 +686,7 @@ function initMap(){
 
 
 function changeMarker(marker){
-		var icon = '../pictures/logo-map.png';
+		var icon = 'logo-map.png';
 		if($(window).width() <= 840){
 			icon = '../pictures/logo-map-small.png';
 		}
@@ -755,7 +755,7 @@ function centerMap(type){
 				
 		});
 		
-		var logo = '../pictures/logo-map.png';
+		var logo = 'logo-map.png';
 		
 		if($(window).width() <= 840){
 			logo = '../pictures/logo-map-small.png';
